@@ -1,0 +1,9 @@
+build/
+bin/
+.gradle/
+.settings/
+.classpath
+
+src/main/resources/schemas/birn/*
+src/main/resources/schemas/xdat/*
+src/main/resources/schemas/xnat/*

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <xs:schema targetNamespace="htw-berlin.de/projekte/snet02" xmlns:snet02="htw-berlin.de/projekte/snet02" xmlns:xdat="http://nrg.wustl.edu/xdat" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xnat="http://nrg.wustl.edu/xnat" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:import namespace="http://nrg.wustl.edu/xnat" schemaLocation="../xnat/xnat.xsd"/>
+	<xs:element name="SleepResearchSession" type="snet02:sleepResearchSessionData"/>         
+	<xs:element name="EncryptedPSGScan" type="snet02:encPsgScanData"/>
+
+	<xs:complexType name="sleepResearchSessionData">
+		<xs:annotation>
+			<xs:documentation>Sleep Research Session</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="xnat:imageSessionData"/>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="encPsgScanData">
+		<xs:annotation>
+			<xs:documentation>Polysomnographic Scan</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="xnat:imageScanData"/>
+		</xs:complexContent>
+	</xs:complexType>
+ </xs:schema>

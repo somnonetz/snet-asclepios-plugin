@@ -1,0 +1,17 @@
+#set ($asclepiosPath = $om.getProject() + '/'
+	+ $om.getSubjectId() + '/'
+	+ $om.getId() + '/' 
+	+ $scan.getProperty("id") + '.edf'
+)
+
+<script>
+	function viewEDFFile() {
+		window.open('/sn-editor?asclepiosPath=$asclepiosPath');
+	}
+</script>
+
+<button onClick="viewEDFFile()">Decrypt and View EDF file</button>
+
+<div width="100%" height="100%">
+	<iframe width="100%" height="400" src="/asclepios-search?filename=$asclepiosPath#get"></iframe>
+</div>
