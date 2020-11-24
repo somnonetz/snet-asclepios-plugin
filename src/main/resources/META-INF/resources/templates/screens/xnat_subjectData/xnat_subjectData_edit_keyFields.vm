@@ -1,3 +1,3 @@
 <!-- BEGIN /screens/xnat_subjectData/xnat_subjectData_edit_keyFields.vm -->
-
+<iframe width="100%" height="600" src="/asclepios-search/create.html?type=xnat:subjectData&id=$!subject.getId()"></iframe>
 <!-- END /screens/xnat_subjectData/xnat_subjectData_edit_keyFields.vm -->
