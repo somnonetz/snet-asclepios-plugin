@@ -9,7 +9,7 @@
 			<xs:documentation>Sleep Research Session</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<xs:extension base="xnat:imageSessionData"/>
+			<xs:extension base="xnat:imageSessionData" />
 		</xs:complexContent>
 	</xs:complexType>
 
@@ -18,7 +18,18 @@
 			<xs:documentation>Polysomnographic Scan</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<xs:extension base="xnat:imageScanData"/>
+			<xs:extension base="xnat:imageScanData" />
+				<!-- <xs:sequence>
+					<xs:element name="keyid">
+						<xs:annotation>
+							<xs:documentation>ASCLEPIOS Key ID</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension> -->
 		</xs:complexContent>
 	</xs:complexType>
  </xs:schema>
